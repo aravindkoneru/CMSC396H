@@ -1,8 +1,19 @@
-f = open('sp-biogrid.v3.4.157-sls-std.tsv', 'r')
-clean = open('clean.txt','w')
-allData = f.readlines()
+f1 = open('clean.txt', 'r')
+f2 = open ('idKey.txt')
+cleanerFixed = open('cleanerFixed.txt','w')
+cleanData = f1.readlines()
+keyData = f2.readlines()
 
-for i in range (len (allData)):
-	line = allData[i].split()
-	#print (line[0] + " " + line[1] )
-	clean.write(line[0] + " " + line[1]+ "\n")
+map = {}
+
+for line in keyData:
+	splitLine = line.split()
+	key = splitLine[0]
+	value = splitLine[1]
+	map[key] = value
+
+for line in cleanData:
+	splitLine = line.split()
+	geneA = splitLine[0]
+	geneB = splitLine[1]
+	cleanerFixed.write(map[geneA] + " " + map[geneB] + "\n" )
