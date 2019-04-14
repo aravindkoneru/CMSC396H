@@ -1,4 +1,4 @@
-Predicting Synthetic Lethal Genetic Interactions in s.p and s.p. yeast using Node2Vec and scikit-learn machine learning
+Identifying Synthetic Lethal Interations n Genes Using Node2Vec and Random Forest
 ----
 # Abstract
 
