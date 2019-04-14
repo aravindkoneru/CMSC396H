@@ -7,7 +7,7 @@ Recent advancements in the machine learning field has helped predictions on feat
 
 # Authors
 
-Cameron Simmons
-Aravind Koneru
-Hunter Klamut
-Namrita Perincherry
+* Cameron Simmons
+* Aravind Koneru
+* Hunter Klamut
+* Namrita Perincherry
